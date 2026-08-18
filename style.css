@@ -133,3 +133,13 @@ main {
     background-size: cover;
     margin-top: 18px;
 }
+.MacAirBanner{
+    width: 100%;
+    min-height: 692px;
+
+    background-image: url("./assets/images/macbookAir.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 18px;
+}
