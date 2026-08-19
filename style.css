@@ -209,8 +209,8 @@ main {
 color: #f5f5f7;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.ipadAir img{
-    width: 180px;
+.ipadAir img , .appleCard img , .appleTradeIn img{
+    width: 160px !important;
 }
 .productCard img{
   width: 100%;
@@ -224,21 +224,20 @@ color: #f5f5f7;
     font-weight: 400;
     
     text-align: center;
-    
+
      color: #f5f5f7;
     letter-spacing: .011em;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
-.ipadAir,.appleWatch .productCard p{
-        font-size: 18px;
-    line-height: 1.1904761905;
-   color: rgb(29, 29, 31);
-    font-weight: 400;
-    letter-spacing: .011em;
-    text-align: center;
-    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+.ipadAir .productCard p,
+.appleWatch .productCard p,
+.appleCard .productCard p,
+.appleTradeIn .productCard p {
+   
 
+    color: rgb(29, 29, 31);
+   
 }
 
 
@@ -270,8 +269,12 @@ color: #f5f5f7;
     background-size: cover;
 }
 
-.appleWatch .cardContent{
+ .cardContent{
     width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -280,6 +283,24 @@ color: #f5f5f7;
  height: 580px;
 
     background-image: url("./assets/images/ipadPro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.appleTradeIn{
+                width: 612px;
+ height: 580px;
+
+    background-image: url("./assets/images/tradeIn.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.appleCard{
+                width: 612px;
+ height: 580px;
+
+    background-image: url("./assets/images/appleCard.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
