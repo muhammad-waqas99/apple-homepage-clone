@@ -339,3 +339,46 @@ footer{
     padding: 0 17px;
     
 }
+
+.footerLinks{
+        font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    display: flex;
+    max-width: 980px;
+    padding-top: 20px;
+    align-items: flex-start;
+    margin: 6px auto;
+    justify-content: center;
+}
+.linksWrapper{
+    flex-basis: 25%;
+   
+ 
+}
+.linksWrapper ul{
+
+    list-style-type: none;
+        margin-inline-end: 20px;
+ 
+}
+.linksWrapper ul li{
+    margin-bottom: 0.8em;
+}
+.linksWrapper h3{
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 12px;
+    line-height: 1.3333733333;
+  
+    letter-spacing: -0.01em;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+    margin-bottom: .8em;
+    margin-inline-end: 20px;
+}
+
+.footerBottomLinks{
+    margin-top: 20px;
+}
