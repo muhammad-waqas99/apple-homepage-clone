@@ -17,6 +17,7 @@ body{
 }
 nav {
   width: 100%;
+  z-index: 100;
   min-width: 320px;
   height: 48px;
   max-height: 44px;
@@ -117,6 +118,7 @@ main {
 .secondaryBtn {
     color: rgb(0, 113, 227);
     background-color: white;
+    border: 1px solid rgb(0, 113, 227) !important;
 }
 
 .secondaryBtn:hover {
@@ -160,9 +162,7 @@ main {
     align-items: center;
 }
 
-.cardContent{
-    width: 300px;
-}
+
 
 .productCardBtn button {
     margin-top: 16px;
@@ -321,6 +321,10 @@ footer{
     padding: 17px 0 11px;
 
 }
+.footerList span{
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: underline;
+}
 .footerList ul{
     list-style-type: none;
 
@@ -366,6 +370,10 @@ footer{
 }
 .linksWrapper ul li{
     margin-bottom: 0.8em;
+        color: rgba(0, 0, 0, 0.72)
+}
+.linksWrapper ul li:hover{
+    text-decoration: underline;
 }
 .linksWrapper h3{
     color: rgba(0, 0, 0, 0.88);
@@ -382,3 +390,69 @@ footer{
 .footerBottomLinks{
     margin-top: 20px;
 }
+
+.footerBottom{
+    max-width: 980px;
+margin: 37px auto 11px;
+}
+.footerBottom .first{
+
+        margin-bottom: 16px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16)
+
+;
+font-size: 12px;
+}
+.footerBottom .first span{
+    color: rgb(0, 102, 204);
+    text-decoration: underline;
+}
+
+.footerBottom .second{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+
+}
+.footerBottom .second .footerLegal{
+    display: flex;
+}
+.footerBottom .second .copyright{
+    margin-inline-end: 30px;
+}
+
+.footerBottom .second .legalLinks ul {
+    display: flex;
+    list-style: none;
+   
+}
+.footerBottom .second .legalLinks ul li{
+    display: flex;
+    padding: 0px 9px;
+    color: rgba(0, 0, 0, 0.72)
+;
+     position: relative;
+     transition: all 0.3 ease;
+}
+.footerBottom .second .legalLinks ul li:hover{
+    text-decoration: underline;
+}
+
+.footerBottom .second .legalLinks ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background-color: #6e6e73;
+}
+.footerBottom .second .countryName{
+    color: rgba(0, 0, 0, 0.72);
+}
+.footerBottom .second .countryName:hover{
+    text-decoration: underline;
+}
+
